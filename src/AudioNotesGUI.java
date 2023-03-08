@@ -68,7 +68,7 @@ public class AudioNotesGUI extends JFrame implements ActionListener {
                 isRunning = true;
 
                 // Run the Python program to generate HTML notes
-                String command = "C:/Users/Ari/AppData/Local/Programs/Python/Python311/python.exe summary_test.py " + selectedFileLabel.getText();
+                String command = "python3 summary_test.py " + selectedFileLabel.getText();
                 try {
                     Process p = Runtime.getRuntime().exec(command);
 
